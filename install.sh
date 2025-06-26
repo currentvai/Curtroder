@@ -78,7 +78,8 @@ display_banner() {
     echo -e "\e[1;31m\"I am completely destroyed. Error 304 Not Modified.\"\e[0m"
     
     # Dynamic Info: IP and Date
-    echo -e "\n\e[95m📅 \$(date +"%A, %d %B %Y") | ⏰ \$(date +"%I:%M %p")\e[0m"
+    echo -e "\n\e[91m📅 $(date +"%A, %d %B %Y") | ⏰ $(date +"%I:%M %p")\e[0m"
+    
     if command -v curl >/dev/null 2>&1; then
       IP=\$(curl -s ifconfig.me)
     else
