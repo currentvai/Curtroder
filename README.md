@@ -50,15 +50,19 @@ A futuristic Termux intro + banner tool by Current Vai ♚  <!-- এখানে
 
 Just copy-paste these commands into your Termux terminal to get started:
 
-```bash
 # Update packages and install git
+```bash
 pkg update && pkg upgrade -y
 pkg install git -y
+bash install.sh
 
 # Clone the Curtroder repository
+```bash
 git clone https://github.com/your-username/curtroder.git
+bash install.sh
 
 # Enter the directory and run the installer
+```bash
 cd curtroder
 bash install.sh
 ```
@@ -71,11 +75,12 @@ bash install.sh
 
 If you'd like to restore your previous Termux look:
 
-```bash
 # Restore your original .bashrc
+```bash
 mv ~/.bashrc.bak ~/.bashrc
-
+```
 # Restart Termux
+```bash
 exit
 ```
 
