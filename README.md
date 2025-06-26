@@ -38,7 +38,7 @@ A futuristic Termux intro + banner tool by Current Vai ♚  <!-- এখানে
 ┌────────────────────────────┐
 │    Welcome, Current Vai!   │
 │   IP: 103.xxx.xxx.xx       │
-│   Date: 2025-06-26         │
+│   Date: 20xx-xx-xx         │
 └────────────────────────────┘
 ```
 
