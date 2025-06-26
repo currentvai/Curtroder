@@ -1,0 +1,18 @@
+# Backup file created by the Curtroder installer
+# আমাদের ইন্সটলার যে ব্যাকআপ ফাইলটি তৈরি করে।
+.bashrc.bak
+
+# Common temporary files from text editors (like nano, vim)
+# বিভিন্ন টেক্সট এডিটরের তৈরি করা টেম্পোরারি ফাইল।
+*~
+*.swp
+
+# OS-generated files (for cross-platform compatibility)
+# বিভিন্ন অপারেটিং সিস্টেমের তৈরি করা অপ্রয়োজনীয় ফাইল (macOS, Windows)।
+.DS_Store
+Thumbs.db
+
+# Example for sensitive information if you add it in the future
+# ভবিষ্যতে সংবেদনশীল তথ্য যোগ করলে তার জন্য।
+# .env
+# config.env
