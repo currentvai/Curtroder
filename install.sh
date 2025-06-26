@@ -48,7 +48,7 @@ cat > "$HOME/.bashrc" << EOF
 # --- Step 1: Loading Animation ---
 clear
 echo -e "\e[1;32m$user_name ♚\e[0m"
-echo -e "\e[1;33mPlease wait a moment. system is loading\e[0m"
+echo -e "\e[1;33mPlease wait a moment. system is loading...\e[0m"
 echo ""
 echo -n -e "\e[1;31m#loading [\e[0m"
 for i in {1..20}; do
@@ -61,7 +61,7 @@ clear
 
 # --- Step 2: Welcome Message ---
 echo -e "\e[1;32mWelcome $user_name ♚\e[0m"
-echo -e "\e[1;36msystem is ready.\e[0m"
+echo -e "\e[1;36mSystem is ready.\e[0m"
 echo -e "\e[1;36mNow you can complete your mission.\e[0m"
 echo ""
 
@@ -73,7 +73,7 @@ display_banner() {
     echo -e "\e[0m"
 
     # Developer Info
-    echo -e "\e[1;34m✨ Theme by $user_name | Curtroder v1.0\e[0m"
+    echo -e "\e[1;34mDevoloped By Current Vai ♚ | Curtroder v1.0\e[0m"
     echo -e "\e[1;33m© Copyright $(date +%Y) — All Rights Reserved.\e[0m"
     echo -e "\e[1;31m\"I am completely destroyed. Error 304 Not Modified.\"\e[0m"
     
@@ -95,8 +95,8 @@ clear() {
 }
 
 # --- Step 4: Custom Command Prompt (PS1) ---
-PS1='\[\e[1;31m\]┌─[\[\e[1;33m\]\t\[\e[1;31m\]]─[\[\e[1;33m\]$user_name@Curtroder\[\e[1;31m\]]──[\[\e[1;36m\]\w\[\e[1;31m\]]
-\[\e[1;31m\]└─> \[\e[0m\]'
+PS1='\[\e[36m\]┌─[\[\e[32m\]\t\[\e[36m\]]─[\[\e[32m\]$user_name@Curtroder\[\e[36m\]]──[\[\e[34m\]\w\[\e[36m\]]
+\[\e[36m\]└─> \[\e[0m\]'
 
 # --- Final step: Show the banner for the first time ---
 display_banner
