@@ -58,7 +58,7 @@ pkg install git -y
 
 # Clone the Curtroder repository
 ```bash
-git clone https://github.com/Current7777/Curtroder.git
+git clone https://github.com/currentvai/Curtroder.git
 ```
 
 # Enter the directory and run the installer
@@ -90,8 +90,8 @@ Your original settings and prompt will be restored.
 
 ## 🛠️ Developer Info
 
-**Developed with ❤️ by [Current Vai ♚](https://github.com/Current7777)**  
-📬 Contact: [@CurrentVai on Telegram](https://t.me/CurrentVai)
+**Developed with ❤️ by [Current Vai ♚](https://github.com/currentvai)**  
+📬 Contact: [@CurrentVai on Telegram](https://t.me/currentVai)
 
 ---**© Copyright 2025 — All Rights Reserved.**
 
@@ -99,8 +99,8 @@ Your original settings and prompt will be restored.
 
 ## 🌐 Connect
 
-- 💬 Telegram: [@CurrentVai](https://t.me/CurrentVai)
-- 🐙 GitHub: [Current7777](https://github.com/Current7777)
+- 💬 Telegram: [@CurrentVai](https://t.me/currentVai)
+- 🐙 GitHub: [Current7777](https://github.com/currentvai)
 
 ---
 
@@ -110,5 +110,5 @@ This project is licensed under the **MIT License**.
 
 If you want to give me any advice, feel free to contact me.👇👇👇
 
-Telegram: [@CurrentVai](https://t.me/CurrentVai) 
+Telegram: [@CurrentVai](https://t.me/currentvai) 
 
