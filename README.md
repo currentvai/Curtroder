@@ -4,6 +4,14 @@ Welcome to **Curtroder** – a sleek, hacker-style theme for your Termux termina
 With dynamic visuals, persistent headers, and personalized banners, Curtroder makes your terminal not just useful—but **awesome**.
 
 ---
+<p align="center">
+  <img src="assets/logo.png" alt="Curtroder Logo" width="300"/>
+</p>
+
+# Curtroder
+A futuristic Termux intro + banner tool by Current Vai ♚  <!-- এখানে একটি স্ক্রিনশটের লিঙ্ক দেবেন -->
+
+---
 
 ## 🚀 Features
 
@@ -80,8 +88,7 @@ Your original settings and prompt will be restored.
 **Developed with ❤️ by [Current Vai ♚](https://github.com/Current7777)**  
 📬 Contact: [@CurrentVai on Telegram](https://t.me/CurrentVai)
 
-📅 **Year:** 2025  
-© All Rights Reserved.
+---**© Copyright 2025 — All Rights Reserved.**
 
 ---
 
