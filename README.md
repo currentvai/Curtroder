@@ -106,4 +106,8 @@ Your original settings and prompt will be restored.
 
 ## 📢 License
 
-This project is licensed under the **MIT License** — feel free to modify and distribute!
+This project is licensed under the **MIT License** 
+If you want to give me any advice, feel free to contact me.👇👇👇
+
+Telegram: [@CurrentVai](https://t.me/CurrentVai) 
+
