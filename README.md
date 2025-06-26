@@ -44,7 +44,6 @@ This will bring back your previous Termux prompt.
 
 ## ❤️ Credits
 
--   **Concept & Original Idea:** Current Vai ♚
--   **Installer Scripting:** GitHub Copilot / AI Assistant
-
----
+-   **Devoloped By:** Current Vai ♚
+    I am completely destroyed. Error 304 Not Modified.
+---**© Copyright 2025 — All Rights Reserved.**
