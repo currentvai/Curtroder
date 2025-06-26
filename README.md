@@ -54,12 +54,13 @@ Just copy-paste these commands into your Termux terminal to get started:
 ```bash
 pkg update && pkg upgrade -y
 pkg install git -y
-bash install.sh
+```
 
 # Clone the Curtroder repository
 ```bash
-git clone https://github.com/your-username/curtroder.git
+git clone ttps://github.com/Current7777/curtroder.git
 bash install.sh
+```
 
 # Enter the directory and run the installer
 ```bash
