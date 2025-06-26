@@ -3,8 +3,6 @@
 Welcome to **Curtroder** – a sleek, hacker-style theme for your Termux terminal that transforms your shell into a **cyberpunk-inspired interface**.  
 With dynamic visuals, persistent headers, and personalized banners, Curtroder makes your terminal not just useful—but **awesome**.
 
-![Curtroder Logo](assets/logo.png) <!-- Optional: Replace with actual image -->
-
 ---
 
 ## 🚀 Features
@@ -28,13 +26,13 @@ With dynamic visuals, persistent headers, and personalized banners, Curtroder ma
 
 ## 🧪 Preview
 
+```
 ┌────────────────────────────┐
-│ Welcome, Current Vai! │
-│ IP: 103.xxx.xxx.xx │
-│ Date: 2025-06-26 │
+│    Welcome, Current Vai!   │
+│   IP: 103.xxx.xxx.xx       │
+│   Date: 2025-06-26         │
 └────────────────────────────┘
-
-
+```
 
 *(Preview your banner and prompt after install)*
 
@@ -55,29 +53,45 @@ git clone https://github.com/your-username/curtroder.git
 # Enter the directory and run the installer
 cd curtroder
 bash install.sh
+```
 
-✅ After installation is complete, simply restart your Termux to see the changes.
+✅ After installation is complete, simply **restart your Termux** to see the changes.
 
+---
+
+## 🧹 Uninstallation
+
+If you'd like to restore your previous Termux look:
+
+```bash
 # Restore your original .bashrc
 mv ~/.bashrc.bak ~/.bashrc
 
 # Restart Termux
 exit
+```
+
 Your original settings and prompt will be restored.
 
-🛠️ Developer Info
-Developed with ❤️ by **Developed with ❤️ by [Current Vai ♚](https://github.com/current-vai)**
-“I am completely destroyed. Error 304: Not Modified.”
+---
 
-📅 Year: 2025
+## 🛠️ Developer Info
+
+**Developed with ❤️ by [Current Vai ♚](https://github.com/Current7777)**  
+📬 Contact: [@CurrentVai on Telegram](https://t.me/CurrentVai)
+
+📅 **Year:** 2025  
 © All Rights Reserved.
+
+---
 
 ## 🌐 Connect
 
 - 💬 Telegram: [@CurrentVai](https://t.me/CurrentVai)
 - 🐙 GitHub: [Current7777](https://github.com/Current7777)
 
+---
 
+## 📢 License
 
-⭐ Star the repo if you like it!
-📬 Pull requests and suggestions are always welcome.
+This project is licensed under the **MIT License** — feel free to modify and distribute!
