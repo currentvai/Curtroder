@@ -62,7 +62,7 @@ clear
 # --- Step 2: Welcome Message ---
 echo -e "\e[1;32mWelcome $user_name ♚\e[0m"
 echo -e "\e[1;36mSystem is ready.\e[0m"
-echo -e "\e[1;36mNow you can complete your mission.\e[0m"
+echo -e "\e[1;32mNow you can complete your mission.\e[0m"
 echo ""
 
 # --- Step 3: The Pinned Banner Function ---
