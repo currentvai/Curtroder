@@ -58,8 +58,7 @@ pkg install git -y
 
 # Clone the Curtroder repository
 ```bash
-git clone ttps://github.com/Current7777/curtroder.git
-bash install.sh
+git clone https://github.com/Current7777/curtroder.git
 ```
 
 # Enter the directory and run the installer
