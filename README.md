@@ -2,7 +2,12 @@
 
 Welcome to Curtroder! A beautiful, dynamic, and personalized theme for your Termux terminal that makes you feel like a pro. This theme includes a loading animation, a custom ASCII banner with your name, and a pinned header that stays even after clearing the screen.
 
-![screenshot](link-to-your-screenshot.png)  <!-- এখানে একটি স্ক্রিনশটের লিঙ্ক দেবেন -->
+<p align="center">
+  <img src="assets/logo.png" alt="Curtroder Logo" width="300"/>
+</p>
+
+# Curtroder
+A futuristic Termux intro + banner tool by Current Vai ♚  <!-- এখানে একটি স্ক্রিনশটের লিঙ্ক দেবেন -->
 
 ## ✨ Features
 
