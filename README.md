@@ -88,6 +88,16 @@ Your original settings and prompt will be restored.
 
 ---
 
+⚠️ **Disclaimer
+This tool is intended for personal and educational use only.**
+
+**Please respect the copyrights of content creators.**
+
+❗ **The developer is not responsible for any misuse of this script.**
+
+---
+
+
 ## 🛠️ Developer Info
 
 **Developed with ❤️ by [Current Vai ♚](https://github.com/currentvai)**  
