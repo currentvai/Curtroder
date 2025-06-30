@@ -5,7 +5,7 @@ With dynamic visuals, persistent headers, and personalized banners, Curtroder ma
 
 ---
 <p align="center">
-  <img src="assets/logo.png" alt="Curtroder Logo" width="300"/>
+  <img src="assets/image/logo.png" alt="Curtroder Logo" width="300"/>
 </p>
 
 # Curtroder
