@@ -63,7 +63,7 @@ echo -e "\e[1;33m[*] Creating new custom .bashrc file...\e[0m"
 # Define the URL for your loading sound file
 # IMPORTANT: Replace with your actual sound file URL
 # Example: Use a public CDN or your own server to host a small MP3/WAV file.
-SOUND_FILE_URL="assets/audio/scifi.mp3" # <--- IMPORTANT: Change this URL
+SOUND_FILE_URL="https://example.com/path/to/your/loading_sound.mp3" # <--- IMPORTANT: Change this URL
 SOUND_FILE="$HOME/.termux/curtroder_load.mp3"
 
 # Create .termux directory if it doesn't exist
