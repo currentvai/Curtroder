@@ -83,6 +83,16 @@ mv ~/.bashrc.bak ~/.bashrc
 ```bash
 exit
 ```
+---
+🔄 One-Click Update Command
+
+To update the Curvidar tool to the latest version, just run the following command in Termux or Linux:
+
+```bash
+cd $HOME/Curtroder && git pull && chmod +x *.sh && echo "✅ Curtroder Update!"
+```
+---
+
 
 Your original settings and prompt will be restored.
 
