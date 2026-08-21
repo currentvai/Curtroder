@@ -27,7 +27,7 @@ if [ ${#MISSING_PKGS[@]} -gt 0 ]; then
     pkg update -y
     pkg install "${MISSING_PKGS[@]}" -y
     if [ $? -ne 0 ]; then
-        echo -e "\e[1;31m[ERROR] Failed to install one or more required packages. Please check your internet connection, try a different mirror (or run 'pkg search <name>' to confirm availability), or install them manually.\e[0m"
+        echo -e "\e[1;31m[ERROR] Failed to install one or more required packages. Please check your internet connection, try a different mirror (or run 'pkg search <name>' to confirm availability)[...]\n\e[0m"
         exit 1
     fi
 fi
@@ -43,6 +43,11 @@ if [ -z "$user_name" ]; then
     echo -e "\e[1;31m[!] No name entered. Using default name 'User'.\e[0m"
 fi
 echo ""
+
+# Persist chosen name so shells (zsh snippet) can read it later
+# This ensures the banner keeps the same name across restarts
+echo "$user_name" > "$HOME/.curtroder_name"
+chmod 600 "$HOME/.curtroder_name"
 
 # --- Generate ASCII Art from Name ---
 # Using figlet to generate the banner text
