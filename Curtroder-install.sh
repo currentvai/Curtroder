@@ -12,20 +12,22 @@ echo ""
 # --- Dependency Check ---
 echo -e "\e[1;33m[*] Checking for required packages...\e[0m"
 REQUIRED_PKGS="figlet curl"
-MISSING_PKGS=""
+MISSING_PKGS=()
 
+# Prefer testing for executables in PATH
 for pkg in $REQUIRED_PKGS; do
-    if ! pkg show "$pkg" &> /dev/null; then
-        MISSING_PKGS+=" $pkg"
+    if ! command -v "$pkg" >/dev/null 2>&1; then
+        MISSING_PKGS+=("$pkg")
     fi
 done
 
-if [ -n "$MISSING_PKGS" ]; then
-    echo -e "\e[1;33m[!] The following packages are missing: $MISSING_PKGS\e[0m"
+if [ ${#MISSING_PKGS[@]} -gt 0 ]; then
+    echo -e "\e[1;33m[!] The following packages are missing: ${MISSING_PKGS[*]}\e[0m"
     echo -e "\e[1;33m[*] Installing missing packages...\e[0m"
-    pkg install $MISSING_PKGS -y
+    pkg update -y
+    pkg install "${MISSING_PKGS[@]}" -y
     if [ $? -ne 0 ]; then
-        echo -e "\e[1;31m[ERROR] Failed to install one or more required packages. Please check your internet connection or try again later.\e[0m"
+        echo -e "\e[1;31m[ERROR] Failed to install one or more required packages. Please check your internet connection, try a different mirror (or run 'pkg search <name>' to confirm availability)[...]\n\e[0m"
         exit 1
     fi
 fi
@@ -41,6 +43,11 @@ if [ -z "$user_name" ]; then
     echo -e "\e[1;31m[!] No name entered. Using default name 'User'.\e[0m"
 fi
 echo ""
+
+# Persist chosen name so shells (zsh snippet) can read it later
+# This ensures the banner keeps the same name across restarts
+echo "$user_name" > "$HOME/.curtroder_name"
+chmod 600 "$HOME/.curtroder_name"
 
 # --- Generate ASCII Art from Name ---
 # Using figlet to generate the banner text
@@ -104,7 +111,7 @@ display_banner() {
                 term_width=\${COLUMNS:-$(tput cols 2>/dev/null || echo 80)}
                 while IFS= read -r line; do
                         # Remove ANSI escape codes for length calculation
-                        text_plain=\$(echo -e "$line" | sed 's/\x1b\[[0-9;]*m//g')
+                        text_plain=$(echo -e "$line" | sed 's/\x1b\[[0-9;]*m//g')
                         pad=\$(( (term_width - \${#text_plain}) / 2 ))
                         [ \$pad -gt 0 ] && printf "%*s" \$pad ''
                         echo -e "$line" # Print original line with colors
@@ -119,14 +126,14 @@ display_banner() {
         # Developer Info
         echo -e "\e[1;34m\$(center_text <<< 'Devoloped By Current Vai ♚ | Curtroder v1.0')\e[0m"
         echo -e "\e[1;33m\$(center_text <<< "© Copyright \$(date +%Y) — All Rights Reserved.")\e[0m"
-        echo -e "\e[1;31m\$(center_text <<< '"I am completely destroyed. Error 304 Not Modified."')\e[0m"
+        echo -e "\e[1;31m\$(center_text <<< '\"I am completely destroyed. Error 304 Not Modified.\"')\e[0m"
 
         # Dynamic Info: IP and Date
         echo -e "\n\e[91m\$(center_text <<< "📅 \$(date +"%A, %d %B %Y") | ⏰ \$(date +"%I:%M %p")")\e[0m"
 
         # Check for curl before attempting to get IP
         if command -v curl >/dev/null 2>&1; then
-            IP=\$(curl -s ifconfig.me)
+            IP=$(curl -s ifconfig.me)
         else
             IP="(Install 'curl' for IP)" # More informative message
         fi
