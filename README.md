@@ -64,7 +64,7 @@ git clone https://github.com/currentvai/Curtroder.git
 # Enter the directory and run the installer
 ```bash
 cd Curtroder
-bash install.sh
+bash Curtroder-install.sh
 ```
 
 ✅ After installation is complete, simply **restart your Termux** to see the changes.
