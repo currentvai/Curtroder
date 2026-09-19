@@ -113,7 +113,7 @@ This tool is intended for personal and educational use only.**
 **Developed with ❤️ by [Current Vai ♚](https://github.com/currentvai)**  
 📬 Contact: [@CurrentVai on Telegram](https://t.me/currentVai)
 
----**© Copyright 2025 — All Rights Reserved.**
+---**© Copyright 2026 — All Rights Reserved.**
 
 ---
 
